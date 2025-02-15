@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' https://www.gstatic.com https://www.googleapis.com; object-src 'none';"
+    />
+    <title>Water Tank Monitoring System</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@latest"></script>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Water Tank Monitoring System</h1>
+    </header>
+
+    <main class="container">
+      <section class="tank-status">
+        <div id="tankIndicator" class="indicator">
+          <span id="porcentajeVolumenTotal">50%</span>
+        </div>
+        <p>Estado del Tanque</p>
+      </section>
+
+      <section class="data-info">
+        <div class="data-item" id="volumenTotal">Volumen Total:</div>
+        <div class="data-item" id="volumenAdministrable">
+          Volumen Administrable:
+        </div>
+        <div class="data-item" id="volumenAguaDisponible">
+          Volumen Disponible:
+        </div>
+        <div class="data-item" id="consumoDiarioPromedio">
+          Consumo Diario Promedio:
+        </div>
+      </section>
+
+      <section class="tank-info">
+        <div class="info-item" id="tipoTanque">Tipo de Tanque:</div>
+        <div class="info-item" id="configuracion">Configuración:</div>
+        <div class="info-item" id="localizacion">Localización:</div>
+        <div class="info-item" id="timestamp">Fecha de Instalación:</div>
+        <button class="btn" onclick="nextPage()">Siguiente</button>
+      </section>
+    </main>
+  </body>
+</html>
